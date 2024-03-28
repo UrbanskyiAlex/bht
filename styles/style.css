@@ -93,10 +93,9 @@ body {
 }
 /* Main Page */
 .main {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   color: white;
-  overflow: hidden;
 }
 .main__container {
   padding-top: 150px;
@@ -160,8 +159,8 @@ body {
 }
 .item-content-main__box-image {
   position: relative;
-  min-width: 100px;
-  height: 130px;
+  min-width: 90px;
+  height: 120px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -187,5 +186,9 @@ body {
   .item-content-main__box-text {
     font-size: 12px;
     line-height: 1;
+  }
+  .item-content-main__box-image {
+    width: 80px;
+    height: 80px;
   }
 }
