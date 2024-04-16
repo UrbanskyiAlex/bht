@@ -10,7 +10,7 @@ body {
 }
 /* Wrapper */
 .wrapper {
-  height: 100vh;
+  min-height: 100%;
   overflow: clip;
   display: flex;
   flex-direction: column;
