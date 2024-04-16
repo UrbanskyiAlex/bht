@@ -23,6 +23,7 @@ body {
   padding-right: 0.9375rem;
   margin: 0 auto;
 }
+
 /* HEADER */
 .header {
   position: fixed;
@@ -96,6 +97,7 @@ body {
   height: 100vh;
   display: flex;
   color: white;
+  overflow: scroll;
 }
 .main__container {
   padding-top: 150px;
@@ -175,6 +177,119 @@ body {
 .item-content-main__box-text {
   line-height: 1.1;
   font-size: 14px;
+}
+/* coptetition */
+.competition {
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+.competition__container {
+  position: relative;
+  z-index: 3;
+  flex: 1 1 auto;
+  display: flex;
+}
+.competition__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: -3;
+}
+.competition__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.competition__title {
+  padding: 20px 0 30px 0;
+  font-size: clamp(16px, 3.12vw, 35px);
+  font-weight: 700;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.competition__baner {
+}
+.competition__buner-inner:not(:last-child) {
+  margin-bottom: 10px;
+}
+.competition__buner-title {
+  color: #000;
+  padding-left: 15px;
+}
+.competition__buner-scroll {
+  font-size: clamp(16px, 2.22vw, 26px);
+  position: relative;
+  z-index: -1;
+  line-height: 1.5;
+  height: 1.5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes auto-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-1.5em);
+  }
+  40% {
+    transform: translateY(-1.5em);
+  }
+  50% {
+    transform: translateY(-3em);
+  }
+  70% {
+    transform: translateY(-3em);
+  }
+  80% {
+    transform: translateY(-4.5em);
+  }
+  100% {
+    transform: translateY(-4.5em);
+  }
+}
+.competition__buner-scroll-text {
+  animation: auto-scroll 10s infinite;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  color: aliceblue;
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: background-color ease 0.3s;
+}
+.back-btn::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: url(../image/icons/back-arrow.svg) center/contain no-repeat;
+}
+.back-btn:hover {
+  background-color: #000;
+}
+.back-btn:hover:hover::after {
+  filter: invert(1);
 }
 @media (max-width: 479.99px) {
   .item-content-main__header-title {
