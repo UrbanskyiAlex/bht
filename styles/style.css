@@ -10,8 +10,8 @@ body {
 }
 /* Wrapper */
 .wrapper {
-  min-height: 100%;
-  overflow: clip;
+  height: 100%;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -152,14 +152,14 @@ body {
 }
 /* Main Page */
 .main {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   color: white;
   overflow-y: scroll;
 }
 .main__container {
   padding-top: 150px;
-  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
   position: relative;
   z-index: 2;
   /* flex: 1 1 auto; */
