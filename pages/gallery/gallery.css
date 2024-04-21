@@ -1,0 +1,28 @@
+/* Gallery Page */
+/* .wrapper {
+  height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+} */
+.gallery__container {
+  position: relative;
+  height: 100%;
+}
+.gallery__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: -3;
+}
+.gallery__bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
